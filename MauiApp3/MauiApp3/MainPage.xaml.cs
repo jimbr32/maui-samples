@@ -11,8 +11,8 @@
 
         private async void OnTestPageClicked(object sender, EventArgs e)
         {
-            Console.WriteLine("Starting 10 second delay");
-            await Task.Delay(10000);
+            Console.WriteLine("Starting 5 second delay");
+            await Task.Delay(5000);
             Console.WriteLine("Before PushAsync for TestPage");
             await Navigation.PushAsync(new TestPage());
             Console.WriteLine("After PushAsync for TestPage");
